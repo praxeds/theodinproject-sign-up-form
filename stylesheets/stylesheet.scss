@@ -1,0 +1,91 @@
+$basePageColor: #f9fafb;
+$baseFormColor: white;
+$darkColor: #0b0b0b;
+$darkColorSecondary: #212121;
+
+$fontFamily: 'Roboto', sans-serif;
+$headersFontSize: 3vmin;
+$boldText: 500;
+
+$paddingLeftRight: 0 7vmin;
+
+body {
+    display: flex;
+
+    section {
+        flex: 1;
+        height: 100vh;
+        background: url(../assets/images/pexels-monstera-5302893.jpg);
+        background-size: cover;
+        background-position: center;
+        position: relative;
+
+        p,
+        a {
+            font-family: $fontFamily;
+            font-weight: 300;
+            font-size: 1.4vmin;
+            color: $basePageColor;
+        }
+
+        p {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, -80%);
+        }
+    }
+
+    main {
+        flex: 2;
+        height: 100vh;
+        background-color: $basePageColor;
+
+        h3,
+        h4 {
+            padding: $paddingLeftRight;
+            font-family: $fontFamily;
+            font-size: $headersFontSize;
+            font-weight: $boldText;
+            color: $darkColor;
+        }
+
+        h3 {
+            margin-top: 12vmin;
+        }
+
+        h4 {
+            margin-top: 3vmin;
+        }
+
+        form {
+            background-color: $baseFormColor;
+            margin-top: 7vmin;
+            padding: $paddingLeftRight;
+            padding-top: 4vmin;
+            padding-bottom: 4vmin;
+            font-family: $fontFamily;
+
+            h5 {
+                font-size: $headersFontSize;
+                font-weight: $boldText;
+                color: $darkColorSecondary;
+            }
+        }
+    }
+}
+
+div.container {
+    margin-top: 3vmin;
+    width: 60%;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 4vmin;
+
+    div.input {
+        font-size: 0.75rem;
+        flex: 30%;
+        display: flex;
+        flex-direction: column;
+    }
+}
