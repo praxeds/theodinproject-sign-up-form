@@ -21,40 +21,48 @@
         <p>Photos by <a href="https://www.pexels.com/@gabby-k/" target="_blank">Monstera</a> on Pexels</p>
     </section>
     <main>
-        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio corrupti necessitatibus est veniam
+        <h3>This is not a real online service! Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime odio corrupti necessitatibus est veniam
             culpa eos officiis voluptas distinctio! Optio! Lorem ipsum dolor sit amet.</h3>
-        <h4>Lorem ipsum dolor sit amet consectetur.</h4>
+        <h4>Sign up now to get started!</h4>
 
-        <form action="" method="get">
+        <form action="" method="get" id="signUpForm">
             <h5>Let's do this!</h5>
             <div class="container">
                 <div class="input">
-                    <label for="firstName">FIRST NAME</label>
-                    <input type="text" name="first name" id="firstName">
+                    <label for="firstName">FIRST NAME*</label>
+                    <input type="text" name="first name" id="firstName" required>
                 </div>
                 <div class="input">
-                    <label for="lastName">LAST NAME</label>
-                    <input type="text" name="last name" id="lastName">
+                    <label for="lastName">LAST NAME*</label>
+                    <input type="text" name="last name" id="lastName" required>
                 </div>
                 <div class="input">
-                    <label for="email">EMAIL</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">EMAIL*</label>
+                    <input type="email" name="email" id="email" required>
                 </div>
                 <div class="input">
                     <label for="phoneNum">PHONE NUMBER</label>
                     <input type="number" name="phone number" id="phoneNum">
                 </div>
                 <div class="input">
-                    <label for="password">PASSWORD</label>
-                    <input type="password" name="first name" id="password">
+                    <label for="password">PASSWORD*</label>
+                    <input type="password" name="first name" id="password" required>
                 </div>
                 <div class="input">
                     <label for="confirmPassword">CONFIRM PASSWORD</label>
-                    <input type="password" name="confirmPassword" id="confirmPassword">
+                    <input type="password" name="confirmPassword" id="confirmPassword" required>
                 </div>
             </div>
         </form>
-        <button>Create Account</button>
+        <button type="submit" form="signUpForm" value="Submit">Create Account</button>
+        <p>Already a member? <a href="#">Log in</a></p>
+
+        <footer>
+            <span>Copyright © 2022 praxeds</span>
+            <a href="https://github.com/praxeds" target="_blank">
+                <img src="assets/svg/github.svg" alt="Github icon">
+            </a>
+        </footer>
     </main>
 </body>
 

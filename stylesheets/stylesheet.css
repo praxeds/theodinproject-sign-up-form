@@ -1,5 +1,6 @@
 body {
   display: flex;
+  font-family: "Roboto", sans-serif;
 }
 body section {
   flex: 1;
@@ -11,7 +12,6 @@ body section {
 }
 body section p,
 body section a {
-  font-family: "Roboto", sans-serif;
   font-weight: 300;
   font-size: 1.4vmin;
   color: #f9fafb;
@@ -30,7 +30,6 @@ body main {
 body main h3,
 body main h4 {
   padding: 0 7vmin;
-  font-family: "Roboto", sans-serif;
   font-size: 3vmin;
   font-weight: 500;
   color: #0b0b0b;
@@ -47,7 +46,6 @@ body main form {
   padding: 0 7vmin;
   padding-top: 4vmin;
   padding-bottom: 4vmin;
-  font-family: "Roboto", sans-serif;
 }
 body main form h5 {
   font-size: 3vmin;
@@ -58,8 +56,8 @@ body main button {
   padding: 1.5vmin 4vmin;
   margin: 0 7vmin;
   margin-top: 4vmin;
-  font-family: "Roboto", sans-serif;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  font-weight: 500;
   background-color: #77a265;
   color: #f9fafb;
   border: none;
@@ -68,6 +66,15 @@ body main button {
 }
 body main button:hover {
   background-color: #598846;
+}
+body main p {
+  color: #0b0b0b;
+  font-size: 0.8rem;
+  padding: 0 7vmin;
+  margin-top: 2vmin;
+}
+body main p a {
+  color: #598846;
 }
 
 div.container {
@@ -91,4 +98,23 @@ div.container div.input input {
 div.container div.input input:focus {
   outline: none !important;
   border: 1px solid #77a265;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  align-items: center;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 0.8rem;
+}
+footer img {
+  width: 0.8rem;
+}
+footer a:hover {
+  transform: rotate(360deg) scale(1.2);
+  transition-duration: 0.8s;
 }/*# sourceMappingURL=stylesheet.css.map */

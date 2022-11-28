@@ -13,6 +13,7 @@ $paddingLeftRight: 0 7vmin;
 
 body {
     display: flex;
+    font-family: $fontFamily;
 
     section {
         flex: 1;
@@ -24,7 +25,6 @@ body {
 
         p,
         a {
-            font-family: $fontFamily;
             font-weight: 300;
             font-size: 1.4vmin;
             color: $basePageColor;
@@ -46,7 +46,6 @@ body {
         h3,
         h4 {
             padding: $paddingLeftRight;
-            font-family: $fontFamily;
             font-size: $headersFontSize;
             font-weight: $boldText;
             color: $darkColor;
@@ -66,7 +65,6 @@ body {
             padding: $paddingLeftRight;
             padding-top: 4vmin;
             padding-bottom: 4vmin;
-            font-family: $fontFamily;
 
             h5 {
                 font-size: $headersFontSize;
@@ -79,8 +77,8 @@ body {
             padding: 1.5vmin 4vmin;
             margin: $paddingLeftRight;
             margin-top: 4vmin;
-            font-family: $fontFamily;
-            font-size: 0.9rem;
+            font-size: 1rem;
+            font-weight: 500;
             background-color: $accentColor;
             color: $basePageColor;
             border: none;
@@ -90,6 +88,17 @@ body {
 
         button:hover {
             background-color: $accentColorDarker;
+        }
+
+        p {
+            color: $darkColor;
+            font-size: 0.8rem;
+            padding: $paddingLeftRight;
+            margin-top: 2vmin;
+
+            a {
+                color: $accentColorDarker;
+            }
         }
     }
 }
@@ -118,5 +127,26 @@ div.container {
             outline: none !important;
             border: 1px solid $accentColor;
         }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1rem;
+    font-size: 0.8rem;
+
+    img {
+        width: 0.8rem;
+    }
+
+    a:hover {
+        transform: rotate(360deg) scale(1.2);
+        transition-duration: 0.8s;
     }
 }
