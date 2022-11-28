@@ -7,7 +7,7 @@ $accentColorDarker: #598846;
 
 $fontFamily: 'Roboto', sans-serif;
 $headersFontSize: 3vmin;
-$boldText: 500;
+$boldText: 400;
 
 $paddingLeftRight: 0 7vmin;
 
@@ -16,12 +16,38 @@ body {
     font-family: $fontFamily;
 
     section {
-        flex: 1;
+        flex: 1.4;
         height: 100vh;
-        background: url(../assets/images/pexels-monstera-5302924.jpg);
         background-size: cover;
         background-position: center;
         position: relative;
+
+        h1 {
+            position: absolute;
+            left: 50%;
+            top: 55%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            color: $baseFormColor;
+            font-family: 'SinkinSans800Black';
+            font-size: 4.5vmin;
+            line-height: 3vmin;
+
+            span {
+                margin-left: 1vmin;
+                font-family: 'SinkinSans100Thin';
+                letter-spacing: 1vmin;
+                font-size: 2.5vmin;
+            }
+        }
+
+        img {
+            position: absolute;
+            left: 50%;
+            top: 42%;
+            transform: translate(-50%, -50%);
+            height: 15vmin;
+        }
 
         p,
         a {
@@ -36,6 +62,7 @@ body {
             left: 50%;
             transform: translate(-50%, -100%);
         }
+
     }
 
     main {
@@ -61,6 +88,7 @@ body {
 
         form {
             background-color: $baseFormColor;
+            height: 30vh;
             margin-top: 7vmin;
             padding: $paddingLeftRight;
             padding-top: 4vmin;
@@ -78,7 +106,7 @@ body {
             margin: $paddingLeftRight;
             margin-top: 4vmin;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: 400;
             background-color: $accentColor;
             color: $basePageColor;
             border: none;
@@ -111,7 +139,7 @@ div.container {
     gap: 4vmin;
 
     div.input {
-        font-size: 0.75rem;
+        font-size: 0.60rem;
         flex: 30%;
         display: flex;
         flex-direction: column;
@@ -121,12 +149,70 @@ div.container {
         input {
             padding: 0.35rem;
             border: 1px solid #cacaca;
+            cursor: pointer;
         }
 
         input:focus {
             outline: none !important;
             border: 1px solid $accentColor;
         }
+    }
+}
+
+#crossfadeImg {
+    -webkit-animation: changeBckg 16s ease infinite;
+    animation: changeBckg 20s ease infinite;
+}
+
+@-webkit-keyframes changeBckg {
+    0% {
+        background-image: url("../assets/images/pexels-monstera-5302892.jpg");
+    }
+
+    20% {
+        background-image: url("../assets/images/pexels-monstera-5302893.jpg");
+    }
+
+    40% {
+        background-image: url("../assets/images/pexels-monstera-5302896.jpg");
+    }
+
+    60% {
+        background-image: url("../assets/images/pexels-monstera-5302924.jpg");
+    }
+
+    80% {
+        background-image: url("../assets/images/pexels-monstera-5302944.jpg");
+    }
+
+    100% {
+        background-image: url("../assets/images/pexels-monstera-5302892.jpg");
+    }
+}
+
+@keyframes changeBckg {
+    0% {
+        background-image: url("../assets/images/pexels-monstera-5302892.jpg");
+    }
+
+    20% {
+        background-image: url("../assets/images/pexels-monstera-5302893.jpg");
+    }
+
+    40% {
+        background-image: url("../assets/images/pexels-monstera-5302896.jpg");
+    }
+
+    60% {
+        background-image: url("../assets/images/pexels-monstera-5302924.jpg");
+    }
+
+    80% {
+        background-image: url("../assets/images/pexels-monstera-5302944.jpg");
+    }
+
+    100% {
+        background-image: url("../assets/images/pexels-monstera-5302892.jpg");
     }
 }
 

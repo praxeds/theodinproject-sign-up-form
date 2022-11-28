@@ -3,12 +3,35 @@ body {
   font-family: "Roboto", sans-serif;
 }
 body section {
-  flex: 1;
+  flex: 1.4;
   height: 100vh;
-  background: url(../assets/images/pexels-monstera-5302924.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
+}
+body section h1 {
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  font-family: "SinkinSans800Black";
+  font-size: 4.5vmin;
+  line-height: 3vmin;
+}
+body section h1 span {
+  margin-left: 1vmin;
+  font-family: "SinkinSans100Thin";
+  letter-spacing: 1vmin;
+  font-size: 2.5vmin;
+}
+body section img {
+  position: absolute;
+  left: 50%;
+  top: 42%;
+  transform: translate(-50%, -50%);
+  height: 15vmin;
 }
 body section p,
 body section a {
@@ -31,7 +54,7 @@ body main h3,
 body main h4 {
   padding: 0 7vmin;
   font-size: 3vmin;
-  font-weight: 500;
+  font-weight: 400;
   color: #0b0b0b;
 }
 body main h3 {
@@ -42,6 +65,7 @@ body main h4 {
 }
 body main form {
   background-color: white;
+  height: 30vh;
   margin-top: 7vmin;
   padding: 0 7vmin;
   padding-top: 4vmin;
@@ -49,7 +73,7 @@ body main form {
 }
 body main form h5 {
   font-size: 3vmin;
-  font-weight: 500;
+  font-weight: 400;
   color: #212121;
 }
 body main button {
@@ -57,7 +81,7 @@ body main button {
   margin: 0 7vmin;
   margin-top: 4vmin;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 400;
   background-color: #77a265;
   color: #f9fafb;
   border: none;
@@ -85,7 +109,7 @@ div.container {
   gap: 4vmin;
 }
 div.container div.input {
-  font-size: 0.75rem;
+  font-size: 0.6rem;
   flex: 30%;
   display: flex;
   flex-direction: column;
@@ -94,12 +118,58 @@ div.container div.input {
 div.container div.input input {
   padding: 0.35rem;
   border: 1px solid #cacaca;
+  cursor: pointer;
 }
 div.container div.input input:focus {
   outline: none !important;
   border: 1px solid #77a265;
 }
 
+#crossfadeImg {
+  -webkit-animation: changeBckg 16s ease infinite;
+  animation: changeBckg 20s ease infinite;
+}
+
+@-webkit-keyframes changeBckg {
+  0% {
+    background-image: url("../assets/images/pexels-monstera-5302892.jpg");
+  }
+  20% {
+    background-image: url("../assets/images/pexels-monstera-5302893.jpg");
+  }
+  40% {
+    background-image: url("../assets/images/pexels-monstera-5302896.jpg");
+  }
+  60% {
+    background-image: url("../assets/images/pexels-monstera-5302924.jpg");
+  }
+  80% {
+    background-image: url("../assets/images/pexels-monstera-5302944.jpg");
+  }
+  100% {
+    background-image: url("../assets/images/pexels-monstera-5302892.jpg");
+  }
+}
+@keyframes changeBckg {
+  0% {
+    background-image: url("../assets/images/pexels-monstera-5302892.jpg");
+  }
+  20% {
+    background-image: url("../assets/images/pexels-monstera-5302893.jpg");
+  }
+  40% {
+    background-image: url("../assets/images/pexels-monstera-5302896.jpg");
+  }
+  60% {
+    background-image: url("../assets/images/pexels-monstera-5302924.jpg");
+  }
+  80% {
+    background-image: url("../assets/images/pexels-monstera-5302944.jpg");
+  }
+  100% {
+    background-image: url("../assets/images/pexels-monstera-5302892.jpg");
+  }
+}
 footer {
   display: flex;
   flex-direction: row;
