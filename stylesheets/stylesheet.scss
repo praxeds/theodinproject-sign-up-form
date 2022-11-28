@@ -88,7 +88,6 @@ body {
 
         form {
             background-color: $baseFormColor;
-            height: 30vh;
             margin-top: 7vmin;
             padding: $paddingLeftRight;
             padding-top: 4vmin;
@@ -133,7 +132,6 @@ body {
 
 div.container {
     margin-top: 3vmin;
-    width: 60%;
     display: flex;
     flex-flow: row wrap;
     gap: 4vmin;
@@ -234,5 +232,26 @@ footer {
     a:hover {
         transform: rotate(360deg) scale(1.2);
         transition-duration: 0.8s;
+    }
+}
+
+@media (max-width: 835px) { 
+    body {
+        flex-direction: column;
+        height: 145vh;
+    }
+
+    footer {
+       width: 100vw;
+       box-sizing: border-box;
+       justify-content: center;
+       transform: translate(0, 900%);
+    }
+
+    main {
+        h3,
+        h4 {
+            font-size: 1rem !important;
+        }
     }
 }

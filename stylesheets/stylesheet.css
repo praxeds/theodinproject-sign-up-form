@@ -65,7 +65,6 @@ body main h4 {
 }
 body main form {
   background-color: white;
-  height: 30vh;
   margin-top: 7vmin;
   padding: 0 7vmin;
   padding-top: 4vmin;
@@ -103,7 +102,6 @@ body main p a {
 
 div.container {
   margin-top: 3vmin;
-  width: 60%;
   display: flex;
   flex-flow: row wrap;
   gap: 4vmin;
@@ -187,4 +185,21 @@ footer img {
 footer a:hover {
   transform: rotate(360deg) scale(1.2);
   transition-duration: 0.8s;
+}
+
+@media (max-width: 835px) {
+  body {
+    flex-direction: column;
+    height: 145vh;
+  }
+  footer {
+    width: 100vw;
+    box-sizing: border-box;
+    justify-content: center;
+    transform: translate(0, 900%);
+  }
+  main h3,
+main h4 {
+    font-size: 1rem !important;
+  }
 }/*# sourceMappingURL=stylesheet.css.map */
