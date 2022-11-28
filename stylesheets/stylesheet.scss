@@ -2,6 +2,8 @@ $basePageColor: #f9fafb;
 $baseFormColor: white;
 $darkColor: #0b0b0b;
 $darkColorSecondary: #212121;
+$accentColor: #77a265;
+$accentColorDarker: #598846;
 
 $fontFamily: 'Roboto', sans-serif;
 $headersFontSize: 3vmin;
@@ -15,7 +17,7 @@ body {
     section {
         flex: 1;
         height: 100vh;
-        background: url(../assets/images/pexels-monstera-5302893.jpg);
+        background: url(../assets/images/pexels-monstera-5302924.jpg);
         background-size: cover;
         background-position: center;
         position: relative;
@@ -32,7 +34,7 @@ body {
             position: absolute;
             bottom: 0;
             left: 50%;
-            transform: translate(-50%, -80%);
+            transform: translate(-50%, -100%);
         }
     }
 
@@ -72,6 +74,23 @@ body {
                 color: $darkColorSecondary;
             }
         }
+
+        button {
+            padding: 1.5vmin 4vmin;
+            margin: $paddingLeftRight;
+            margin-top: 4vmin;
+            font-family: $fontFamily;
+            font-size: 0.9rem;
+            background-color: $accentColor;
+            color: $basePageColor;
+            border: none;
+            border-radius: 0.8rem;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: $accentColorDarker;
+        }
     }
 }
 
@@ -87,5 +106,17 @@ div.container {
         flex: 30%;
         display: flex;
         flex-direction: column;
+        gap: 0.2rem;
+
+
+        input {
+            padding: 0.35rem;
+            border: 1px solid #cacaca;
+        }
+
+        input:focus {
+            outline: none !important;
+            border: 1px solid $accentColor;
+        }
     }
 }

@@ -4,7 +4,7 @@ body {
 body section {
   flex: 1;
   height: 100vh;
-  background: url(../assets/images/pexels-monstera-5302893.jpg);
+  background: url(../assets/images/pexels-monstera-5302924.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -20,7 +20,7 @@ body section p {
   position: absolute;
   bottom: 0;
   left: 50%;
-  transform: translate(-50%, -80%);
+  transform: translate(-50%, -100%);
 }
 body main {
   flex: 2;
@@ -54,6 +54,21 @@ body main form h5 {
   font-weight: 500;
   color: #212121;
 }
+body main button {
+  padding: 1.5vmin 4vmin;
+  margin: 0 7vmin;
+  margin-top: 4vmin;
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9rem;
+  background-color: #77a265;
+  color: #f9fafb;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+body main button:hover {
+  background-color: #598846;
+}
 
 div.container {
   margin-top: 3vmin;
@@ -67,4 +82,13 @@ div.container div.input {
   flex: 30%;
   display: flex;
   flex-direction: column;
+  gap: 0.2rem;
+}
+div.container div.input input {
+  padding: 0.35rem;
+  border: 1px solid #cacaca;
+}
+div.container div.input input:focus {
+  outline: none !important;
+  border: 1px solid #77a265;
 }/*# sourceMappingURL=stylesheet.css.map */
